@@ -1,0 +1,131 @@
+* {
+  transition: .5s ease; }
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 30px; }
+
+li {
+  display: flex;
+  flex-direction: column; }
+
+.block {
+  margin-left: 5px;
+  margin-right: 5px; }
+  .block .box {
+    position: relative;
+    width: 100%;
+    border: 2px solid #5CA4D7;
+    border-bottom: 0; }
+    .block .box > img {
+      width: 100%;
+      max-width: 100%; }
+    .block .box .buttonline {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-content: center;
+      align-items: center;
+      border-top: 2px solid #5CA4D7;
+      border-bottom: 2px solid #5CA4D7; }
+      .block .box .buttonline .item {
+        padding: 10px 0 10px 0;
+        width: 100%;
+        border-right: 2px solid #5CA4D7;
+        color: #5CA4D7;
+        font-size: 20px;
+        text-align: center; }
+        .block .box .buttonline .item:hover {
+          background-color: #5CA4D7;
+          color: white; }
+      .block .box .buttonline .item:last-child {
+        border-right: 0; }
+      .block .box .buttonline .itemsize {
+        padding: 10px 0 10px 0;
+        width: 100%;
+        border-right: 2px solid #5CA4D7;
+        color: #5CA4D7;
+        font-size: 20px;
+        text-align: center;
+        line-height: 23px; }
+        .block .box .buttonline .itemsize:hover {
+          background-color: #5CA4D7;
+          color: white; }
+        .block .box .buttonline .itemsize .hover-box {
+          opacity: 0;
+          position: absolute;
+          top: 158px;
+          right: 146px;
+          border: 2px solid #5CA4D7; }
+          .block .box .buttonline .itemsize .hover-box .img {
+            width: 100%; }
+        .block .box .buttonline .itemsize:hover {
+          background-color: #5CA4D7;
+          color: white; }
+        .block .box .buttonline .itemsize:hover > .hover-box {
+          opacity: 1; }
+      .block .box .buttonline .itemcolor {
+        padding: 10px 0 10px 0;
+        width: 100%;
+        border-right: 2px solid #5CA4D7;
+        color: #5CA4D7;
+        font-size: 20px;
+        text-align: center; }
+        .block .box .buttonline .itemcolor .hover-box {
+          opacity: 0;
+          position: absolute;
+          top: 283px;
+          right: 66px;
+          border: 2px solid #5CA4D7; }
+          .block .box .buttonline .itemcolor .hover-box .img {
+            width: 100%; }
+        .block .box .buttonline .itemcolor:hover {
+          background-color: #5CA4D7;
+          color: white; }
+        .block .box .buttonline .itemcolor:hover > .hover-box {
+          opacity: 1; }
+  .block .textfooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-top: 15px;
+    color: #5CA4D7; }
+    .block .textfooter .shirtname {
+      font-size: 22px; }
+    .block .textfooter .price {
+      font-weight: bold;
+      font-size: 28px; }
+    .block .textfooter .price:before {
+      content: "$"; }
+
+.colorboxpink {
+  color: #D482AA; }
+
+.colorboxyellow {
+  color: #DCB07D; }
+
+@media only screen and (max-width: 768px) {
+  ul {
+    padding: 20px; }
+    ul .block {
+      margin: 10px;
+      display: block; } }
+@media only screen and (max-width: 400px) {
+  ul {
+    padding: 20px;
+    max-width: 100%; }
+    ul .block {
+      margin: 10px;
+      max-width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,187 @@
+$boxcolor: #5CA4D7;
+$pink: #D482AA;
+$yellow: #DCB07D;
+
+
+*{
+  transition: .5s ease;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  // flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 30px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+}
+
+.block{
+  margin-left: 5px;
+  margin-right: 5px;
+
+  .box {
+    position: relative;
+    width: 100%;
+    border: 2px solid $boxcolor;
+    border-bottom: 0;
+    >img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .buttonline {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-content: center;
+      align-items: center;
+      border-top: 2px solid $boxcolor;
+      border-bottom: 2px solid $boxcolor;
+        .item {
+          padding: 10px 0 10px 0;
+          width: 100%;
+          border-right: 2px solid $boxcolor;
+          color: $boxcolor;
+          font-size: 20px;
+          text-align: center;
+          &:hover{
+            background-color: $boxcolor;
+            color: white;
+          }
+        }
+        .item:last-child {
+          border-right: 0;
+
+        }
+        .itemsize {
+          padding: 10px 0 10px 0;
+          width: 100%;
+          border-right: 2px solid $boxcolor;
+          color: $boxcolor;
+          font-size: 20px;
+          text-align: center;
+          line-height: 23px;
+          &:hover{
+            background-color: $boxcolor;
+            color: white;
+          }
+          .hover-box {
+            opacity: 0;
+            position: absolute;
+            top: 158px;
+            right: 146px;
+            border: 2px solid $boxcolor;
+            .img {
+              width: 100%;
+            }
+          }
+          &:hover {
+            background-color: $boxcolor;
+            color: white;
+          }
+          &:hover > .hover-box {
+            opacity: 1;
+          }
+        }
+        .itemcolor {
+          padding: 10px 0 10px 0;
+          width: 100%;
+          border-right: 2px solid $boxcolor;
+          color: $boxcolor;
+          font-size: 20px;
+          text-align: center;
+
+          .hover-box {
+            opacity: 0;
+            position: absolute;
+            top: 283px;
+            right: 66px;
+            border: 2px solid $boxcolor;
+            .img {
+              width: 100%;
+            }
+          }
+
+          &:hover {
+            background-color: $boxcolor;
+            color: white;
+          }
+
+          &:hover > .hover-box {
+            opacity: 1;
+          }
+        }
+        // .itemcolor {
+        //   height: 50px;
+        //   width: 75px;
+        //   border-right: 2px solid $boxcolor;
+        //   color: $boxcolor;
+        //   font-size: 20px;
+        //   text-align: center;
+        //   line-height: 50px;
+        // }
+      }
+    }
+
+    .textfooter {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      margin-top: 15px;
+      color: $boxcolor;
+      .shirtname{
+        font-size: 22px;
+      }
+
+      .price {
+        font-weight: bold;
+        font-size: 28px;
+      }
+      .price:before {
+          content: "$";
+        }
+      }
+  }
+
+  .colorboxpink{
+    color: $pink;
+  }
+
+  .colorboxyellow{
+    color: $yellow;
+  }
+
+  @media only screen and (max-width: 768px){
+    ul{
+      padding: 20px;
+      .block{
+        margin: 10px;
+        display: block;
+      }
+    }
+
+  }
+  @media only screen and (max-width: 400px){
+    ul{
+      padding: 20px;
+      max-width: 100%;
+      .block{
+        margin: 10px;
+        max-width: 100%;
+      }
+    }
+
+  }
